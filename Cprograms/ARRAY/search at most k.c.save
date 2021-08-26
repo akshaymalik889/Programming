@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int arr[]={,40,50,70,70,60};
+    int size=sizeof(arr)/sizeof(arr[0]);
+    int k=20,x=60,i,diff;
+    for(i=0;i<size;)
+    {
+        if(arr[i]==x)
+            printf("%d ",i);
+        diff=abs(((arr[i]-x))/k);
+        if(diff>1)
+            i=i+diff;
+        else
+            i++;
+    }
+
+}
