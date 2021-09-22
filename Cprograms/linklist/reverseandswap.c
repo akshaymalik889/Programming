@@ -22,7 +22,7 @@ struct Node* mergeINplace(struct Node*,struct Node*);
 struct Node*mergeKsorted(int,int);
 struct Node*reverseBYrec(struct Node*,struct Node*,struct Node*,struct Node*);
 struct Node* addition(struct Node*,struct Node*);
-//struct Node*subtraction(struct Node*,struct Node*);
+struct Node*subtraction(struct Node*,struct Node*);
 
 struct Node *head=NULL;
 
@@ -138,7 +138,7 @@ void main()
                     traverseList(head3);
                     break;
 
-           /*case 16: printf("enter size of first list");
+            case 16: printf("enter size of first list");
                     scanf("%d",&size1);
                      printf("enter size of second list");
                     scanf("%d",&size2);
@@ -148,7 +148,7 @@ void main()
                     head3=reverse(head3);
                     traverseList(head3);
                     break;
-*/
+
             default: printf("\nwrong choice..\n");
         }
         fflush(stdin);
@@ -804,8 +804,26 @@ struct Node*addition(struct Node*headone,struct Node*headtwo)
      }
  };
 
-/* struct Node*subtraction(struct Node*headone,struct NodE*headtwo)
+ struct Node*subtraction(struct Node*headone,struct Node*headtwo)
 {
-
+    if(headone==NULL && headtwo==NULL)
+     {
+         return NULL;
+     }
+     else if(headone!=NULL && headtwo==NULL)
+        return headone;
+     else if(headone==NULL && headtwo!=NULL)
+        return headtwo;
+     else
+     {
+         //traverseList(headone);
+         //traverseList(headtwo);
+         struct Node*head1=reverse(headone);
+          struct Node*head2=reverse(headtwo);
+          //traverseList(head1);
+         //traverseList(head2);
+         struct Node*head3=NULL,*temp3=NULL;
+         struct Node*temp1=head1;
+         struct Node*temp2=head2;
+         struct Node*newNode=NULL;
 };
-*/
