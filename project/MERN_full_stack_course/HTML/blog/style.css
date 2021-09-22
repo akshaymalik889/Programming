@@ -1,0 +1,39 @@
+p{
+	color: blue;
+	font-size: 20px;
+}
+h1{
+	font-size: 40px;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.cursive{
+	font-family: cursive;
+
+}
+#blog-desc{
+	color:#314831 ;
+}
+
+#blog-title:hover{
+	 
+	color: orange;
+}
+ #div1{
+ 	height: 200px;
+ 	width: 200px;
+ 	background-color: red;
+ 	border-width: 2px;
+ 	border-style: double;
+ 	border-color: blueviolet;
+ 	border-radius: 4px;
+ }
+ #sample-para{
+ 	border: 2px solid red;
+ 	font-size: 30px;
+ 	color: darkred;
+ 	font-weight: 400;
+ 	text-align: justify;
+ 	line: height: 30px;
+ }

@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-    int arr[]={10,20,30,40,50,60};
+    int arr[]={10,10.5,12,12,15,16,18,23};
     int size=sizeof(arr)/sizeof arr[0];
     int low=0,high=size-1,mid,val,pos;
     printf("enter value to  be inserted:");

@@ -202,7 +202,7 @@ void main()
                         printf("enter value of n second  Node:\n");
                         scanf("%d",&n2);
                         head2=createList(n2);
-                        temp=intersection2(head1,head2);
+                        temp=intersection(head1,head2);
                         traverseList(temp);
                             break;
 
